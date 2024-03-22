@@ -1,9 +1,4 @@
-#echo -e "\e[36m>>>>>>>>>>>>>>>>> Install maven  <<<<<<<<<<<<<<\e[0m"
-#dnf install maven -y &>>${log}
-#func_exit_status
-#
-#func_apppreq
-#
+
 
 - name: Install Maven
   ansible.builtin.yum:
