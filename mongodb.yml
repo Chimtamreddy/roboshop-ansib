@@ -2,6 +2,11 @@
   hosts: all
   become: true
   tasKs:
+    - name: Copy Mongo Configuration File
+      ansible.builtin.copy:
+        src: mongo.repo
+        dest: /etc/yum.repos.d/mongo.repo
+
     - name: Install Mongodb
       ansible.builtin.dnf:
         name: mongodb-org
