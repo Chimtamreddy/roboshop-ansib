@@ -1,0 +1,9 @@
+- name: RoboShop Project from Cart
+  hosts: all
+  become: true
+  vars:
+    component: cart
+
+  tasKs:
+    - name: Nodejs Setup
+      ansible.builtin.import_tasks: nodejs.yml
