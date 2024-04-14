@@ -1,7 +1,7 @@
 - name: RoboShop Project from MongoDB
   hosts: all
   become: true
-  tasKs:
+  tasks:
     - name: Copy Mongo Configuration File
       ansible.builtin.copy:
         src: mongo.repo

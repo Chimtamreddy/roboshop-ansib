@@ -1,7 +1,7 @@
 - name: RoboShop Project from RabbitMQ
   hosts: all
   become: true
-  tasKs:
+  tasks:
     - name: Install Erlang Repos
       ansible.builtin.shell: https://packagecloud.io/install/repositories/rabbitmq/erlang/script.rpm.sh | bash
 

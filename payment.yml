@@ -4,6 +4,6 @@
   vars:
     component: payment
 
-  tasKs:
+  tasks:
     - name: Python Setup
       ansible.builtin.import_tasks: python.yml

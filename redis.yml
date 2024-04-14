@@ -1,7 +1,7 @@
 - name: RoboShop Project from Redis
   hosts: all
   become: true
-  tasKs:
+  tasks:
     - name: Install Redis Repo
       ansible.builtin.dnf:
         name: https://rpms.remirepo.net/enterprise/remi-release-8.rpm

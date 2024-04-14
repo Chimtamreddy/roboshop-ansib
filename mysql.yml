@@ -1,7 +1,7 @@
 - name: RoboShop Project from MYSQL
   hosts: all
   become: true
-  tasKs:
+  tasks:
     - name: Configure Yum Repo for MYSQL
       ansible.builtin.copy:
         src: mysql.repo
