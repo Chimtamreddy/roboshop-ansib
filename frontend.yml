@@ -1,7 +1,7 @@
 - name: RoboShop Project from Frontend
   hosts: all
   become: true
-  tasKs:
+  tasks:
     - name: Install Nginx
       ansible.builtin.dnf:
         name: nginx
