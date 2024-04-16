@@ -11,7 +11,7 @@
 
 
 - name:  Download Python Dependencies
-  ansible.builtin.shell: pip3.6 install --user
+  ansible.builtin.shell: pip3.6 install -r requirements.txt
   args:
     chdir: /app
 
