@@ -1,9 +1,0 @@
-- name: RoboShop Project from Payment
-  hosts: all
-  become: true
-  vars:
-    component: payment
-
-  tasks:
-    - name: Python Setup
-      ansible.builtin.import_tasks: python.yml
