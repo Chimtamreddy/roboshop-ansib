@@ -42,12 +42,12 @@
     dest: /opt/nginx_exporter
     remote_src: yes
 
-- name: Copy Nginx Prometheus Exporter Configuration
+- name: Copy Nginx Prometheus Exporter Service
   ansible.builtin.copy:
     src: nginx-exporter.service
     dest: /etc/systemd/system/nginx_exporter.service
 
-- name: Restart Nginx Prometheus Exporter
+- name: Restart Nginx Prometheus Exporter Service
   ansible.builtin.systemd:
     name: nginx_exporter
     state: restarted
