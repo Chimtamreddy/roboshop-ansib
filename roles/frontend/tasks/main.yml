@@ -8,8 +8,6 @@
     src: nginx-roboshop.conf
     dest: /etc/nginx/default.d/roboshop.conf
 
-
-
 - name: Clean Old content
   ansible.builtin.file:
     path: /usr/share/nginx/html
