@@ -4,7 +4,7 @@
     dest: /etc/yum.repos.d/elk.repo
 
 - name: Install Filebeat
-  ansible.builtin.yum:
+  ansible.builtin.dnf:
     name: filebeat
     state: installed
 
