@@ -6,7 +6,8 @@
 - name: Install Filebeat
   ansible.builtin.dnf:
     name: filebeat
-    state: latest
+    state: installed
+
 - name: Copy Filebeat Configuration
   ansible.builtin.template:
     src: filebeat.yml
