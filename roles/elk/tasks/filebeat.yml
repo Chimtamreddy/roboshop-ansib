@@ -1,1 +1,5 @@
+- name: Copy elk repo file
+  ansible.builtin.template:
+    src: elk.repo
+    dest: /etc/yum.repos.d/elk.repo
 
