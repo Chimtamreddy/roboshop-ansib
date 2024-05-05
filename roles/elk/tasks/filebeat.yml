@@ -3,7 +3,7 @@
     src: elk.repo
     dest: /etc/yum.repos.d/elk.repo
 
-- name: Install filebeat
-  ansible.builtin.dnf:
-    name: filebeat
-    state: installed
+#- name: Install filebeat
+#  ansible.builtin.dnf:
+#    name: filebeat
+#    state: installed
